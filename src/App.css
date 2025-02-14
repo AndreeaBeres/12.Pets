@@ -1,0 +1,137 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #F8E8D0; /* primary */
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  background-color: #6ABEA7; /* softTeal */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #5A3E2B; /* deepBrown */
+  margin-bottom: 1rem;
+}
+
+/* Main Section Styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+/* Section Styles */
+section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 40rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+section h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #5A3E2B; /* deepBrown */
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1.125rem;
+  color: #4A5568; /* gray-700 */
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.75rem;
+}
+
+section img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Styles */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Testimonials Styles */
+.testimonials div {
+  background-color: #EDF2F7; /* gray-100 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials p {
+  color: #2D3748; /* gray-800 */
+}
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  background-color: #F4C542; /* goldenYellow */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+footer p {
+  color: #5A3E2B; /* deepBrown */
+}
+
+/* Quiz Styles */
+.quiz-link {
+  display: inline-block;
+  background-color: #F4C542; /* goldenYellow */
+  color: #2D3748; /* heading-color */
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.quiz-link:hover {
+  background-color: #ECC94B; /* hover:bg-yellow-400 */
+}

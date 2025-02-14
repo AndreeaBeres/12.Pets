@@ -1,0 +1,100 @@
+.quiz-section {
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  padding: 2rem;
+  max-width: 40rem;
+  width: 100%;
+  margin-top: 3rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styles for the questions */
+#quiz-form > div {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition: opacity 0.5s, transform 0.5s;
+  margin-bottom: 2rem;
+}
+
+/* Show the questions with animation */
+.opacity-100 {
+  opacity: 1 !important;
+}
+
+.translate-y-0 {
+  transform: translateY(0) !important;
+}
+
+/* Styles for the result message */
+#result.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* General styles for the form */
+label {
+  display: block;
+  font-size: 1.125rem;
+  color: #4A5568; /* gray-700 */
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.quiz-section img {
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2D3748; /* gray-800 */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.quiz-section p {
+  font-size: 1rem;
+  color: #718096; /* gray-600 */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-section button {
+  display: block;
+  width: 100%;
+  background-color: #3182CE; /* blue-600 */
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quiz-section button:hover {
+  background-color: #2B6CB0; /* blue-700 */
+  transform: scale(1.05);
+}
+
+.quiz-section .result {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  color: #2D3748; /* gray-800 */
+  text-align: center;
+}
